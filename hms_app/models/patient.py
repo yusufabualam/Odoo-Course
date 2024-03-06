@@ -22,10 +22,10 @@ class Patient(models.Model):
     address = fields.Text()
     age = fields.Integer()
     status = fields.Selection([
-        ('Undetermined','Undetermined'),
-        ('Good','Good'),
-        ('Fair','Fair'),
-        ('Serious','Serious'),
+        ('undetermined','Undetermined'),
+        ('good','Good'),
+        ('fair','Fair'),
+        ('serious','Serious'),
     ])
     department_id = fields.Many2one('hms.department')
     doctor_id = fields.Many2one('hms.doctor')
