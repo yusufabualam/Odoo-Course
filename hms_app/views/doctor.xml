@@ -6,6 +6,7 @@
                 <tree>
                     <field name="f_name"/>
                     <field name="l_name"/>
+                    <field name="department_id"/>
                 </tree>
             </field>
     </record>
@@ -20,7 +21,8 @@
                         <group string="General Info.">
                             <field name="f_name"/>
                             <field name="l_name"/>
-                            <field name="image"/>
+                            <field name="image" widget="image" options='{"size": [100, 100]}' class="bg-view"/>
+                            <field name="department_id"/>
                         </group>
                     </group>
                 </sheet>
@@ -46,5 +48,6 @@
     <menuitem id="menu_all_doctors"
               name="Doctor"
               parent="menu_root_doctor"
-              action="hms_doctor_action"/>
+              action="hms_doctor_action"
+              groups="hms_app.hms_manager_group"/>
 </odoo>

@@ -28,6 +28,9 @@
                         <page string="Patients">
                             <field name="patient_ids"/>
                         </page>
+                        <page string="Doctors">
+                            <field name="doctor_ids"/>
+                        </page>
                     </notebook>
                 </sheet>
             </form>
